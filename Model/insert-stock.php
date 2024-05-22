@@ -28,7 +28,10 @@ if (empty($item) || empty($category) || empty($quantity) || empty($warehouse)) {
 
     // Execute the query
     if (mysqli_stmt_execute($stmt)) {
-        echo "Data inserted successfully.";
+        // Construct success message
+        $successMessage = "Data inserted successfully.";
+        // Return success message
+        echo $successMessage;
     } else {
         echo "Error: " . mysqli_error($conn);
     }
@@ -48,11 +51,6 @@ if (empty($item) || empty($category) || empty($quantity) || empty($warehouse)) {
     } else {
         echo "Error opening the file.";
     }
-    
-
-
-
-
 
     // Close the database connection
     mysqli_stmt_close($stmt);

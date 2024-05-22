@@ -1,9 +1,11 @@
 <?php
 include "../../Model/user.php";
 include '../../Model/session.php';
+include '../../Model/auth_check.php';
 ?>
 <!DOCTYPE html>
 <html>
+  
 
 <head>
   <title>Admin Dashboard</title>
@@ -37,7 +39,7 @@ include '../../Model/session.php';
     </div>
   </div>
   <ul>
-    <li><a href="index.php"><i class="fa fa-home" aria-hidden="true"></i> Dashboard</a></li>
+    <li><a href="adminIndex.php"><i class="fa fa-home" aria-hidden="true"></i> Dashboard</a></li>
     <br>
     <li><a href="stockcheck.php"><i class="fas fa-clipboard-check" aria-hidden="true"></i> Check Stock</a></li>
     <br>
@@ -52,7 +54,11 @@ include '../../Model/session.php';
   </ul>
 </div>
 
+<div class = "container" id="stoku" style="background-color: red;"></div>
 
+<div class="container2" id="tiketsat" style="background-color:aquamarine; padding-top: 100px;"></div>
+
+<div class="container3" id="logs-container" style="background-color:blue; padding-top:100px;"></div>
 
 <script>
   var btn = document.querySelector('.toggle');
@@ -69,9 +75,14 @@ include '../../Model/session.php';
     }
   }
 </script>
-<script rel="script" href="insertStockContr.js">
 
+
+<script src = "../../Controller/stock-overview.js"></script>
+
+<script src="../../Controller/ticket-overview.js">
 </script>
+
+<script src="../../Controller/logs-overview.js"></script>
 
 </body>
 
