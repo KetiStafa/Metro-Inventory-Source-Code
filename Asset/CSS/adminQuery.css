@@ -1,0 +1,63 @@
+@media screen and (max-width: 768px) {
+    .headeri {
+        flex-direction: column;
+        align-items: flex-start;
+      padding: 10px;
+      height: 4%; /* Adjust height to auto */
+    }
+  
+    .admin-dashboard {
+      font-size: 16px;
+      margin-bottom: 10px;
+      
+    }
+  
+    .user-profile {
+      position: static; /* Change from absolute to static */
+      margin-top: 10px; /* Add margin for spacing */
+      transform: none; /* Remove translateY */
+      align-self: flex-end; /* Align to the right */
+    }
+  
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .sidebar {
+     
+      left: -100%; /* Hide sidebar initially */
+      padding-top: 60px;
+    }
+  
+    .sidebarshow {
+      left: 0;
+    }
+  
+    .container {
+      width: 90%; /* Adjust width for better fit */
+      margin: 20% auto; /* Center container */
+      padding: 20px;
+    }
+  
+    #data-table th, #data-table td {
+      font-size: 14px; /* Smaller font size */
+      padding: 6px; /* Adjust padding */
+    }
+  
+    .dropdown-menu {
+      right: 10px;
+      left: auto; /* Ensure dropdown aligns properly */
+    }
+  
+    .toggle span {
+      height: 2px; /* Adjust height */
+    }
+  
+    .toggle span:before,
+    .toggle span:after {
+      top: -6px; /* Adjust positioning */
+      top: 6px;
+    }
+  }

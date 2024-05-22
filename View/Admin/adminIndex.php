@@ -10,6 +10,7 @@ include '../../Model/auth_check.php';
 <head>
   <title>Admin Dashboard</title>
   <link rel="stylesheet" href="../../Asset/CSS/admin.css">
+  <link rel="stylesheet" href="../../Asset/CSS/adminQuery.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css" integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,6 +20,7 @@ include '../../Model/auth_check.php';
 
 <div class="sidebar" id='sidebar'>
   <div class="headeri">
+  <span></span>
     <button type="button" class="toggle" id="toggle">
       <span></span>
     </button>
@@ -59,6 +61,8 @@ include '../../Model/auth_check.php';
 <div class="container2" id="tiketsat" style="background-color:aquamarine; padding-top: 100px;"></div>
 
 <div class="container3" id="logs-container" style="background-color:blue; padding-top:100px;"></div>
+
+
 
 <script>
   var btn = document.querySelector('.toggle');
